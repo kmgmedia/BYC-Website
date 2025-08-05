@@ -1,0 +1,17 @@
+@keyframes wordchange {
+    0% {
+        content: "Men";
+    }
+    25% {
+        content: "Women";
+    }
+    50% {
+        content: "Kids";
+    }
+    75% {
+        content: "yourself";
+    }
+    100% {
+        content: "Men";
+    }
+}

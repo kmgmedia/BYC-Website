@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+.recently-viewed {
+    border: 1px solid rgba(225, 225, 225, 1) ;
+    width: 95%; 
+    border-radius: 10px;
+    box-shadow: 3px 4px 22px 1px rgba(0,0,0,0.06);
+    -webkit-box-shadow: 3px 4px 22px 1px rgba(0,0,0,0.06);
+    -moz-box-shadow: 3px 4px 22px 1px rgba(0,0,0,0.06);
+    margin: 100px 0 60px;
+    .text h6 {
+        font: 100% $secondary-font;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: capitalize;
+    }
+    .text a:visited, .text a:link, .text a:active{
+        font: 100% $primary-font;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: rgba(189, 58, 58, 1);
+        text-decoration: none;
+    }
+    hr {
+        border: 2px solid #d1cfcf;
+    }
+    .product-cards {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .card {
+            flex: 0 0 95%;
+            padding-top: 10px;
+            border: none;
+            cursor: pointer;
+            .card-img-top {
+                border-radius: 10px 10px 0 0;
+            }
+            .card-title, .sub-title {
+                font-weight: bold;
+                line-height: 21px;
+                text-transform: uppercase;
+            }
+            .sub-title {
+                margin-top: -5px;
+                font-weight: 400;
+            }
+            .card-text {
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: capitalize;
+            }
+            .price {
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) {
+    .recently-viewed {
+        .product-cards {
+            .card {
+                flex: 0 0 calc(100%/2);
+                padding-right: 15px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .recently-viewed {
+        .product-cards {
+            .card {
+                flex: 0 0 calc(100%/5);
+            }
+        }
+    }
+}

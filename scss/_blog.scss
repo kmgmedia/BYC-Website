@@ -1,0 +1,41 @@
+@use 'mixins' as *;
+
+.blog-list {
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &-title {
+        font-size: 26px;
+        font-weight: 700;
+
+    }
+    &-para {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .insights {
+        width: 50%;
+        background-color: #fdf8f8;
+    }
+}
+article .title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #212121;
+}
+.blog-news {
+    .insights {
+        background-color: #e0e0e0;
+    }
+    .blog-text {
+        text-align: justify;
+        font-size: 20px;
+        color: #424242;
+    }
+}
+.button .readbtn {
+    @include buttons;
+    border: 1px solid black;
+    border-radius: 0;
+}
